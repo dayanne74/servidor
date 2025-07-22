@@ -826,7 +826,7 @@ function formatFileSize(bytes) {
 
 // Ruta principal - servir el HTML
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.status(200).send('✅ API de soporte técnico funcionando correctamente.');
 });
 
 // Middleware de manejo de errores global
